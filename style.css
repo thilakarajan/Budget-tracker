@@ -61,3 +61,11 @@ span.all{
     flex-direction: row;
     margin-left: 30vw;
 }
+
+button{
+    background-color: blue;
+    height: 30px;
+    width: 10vw;
+    color: white;
+    border-radius: 5px;
+}

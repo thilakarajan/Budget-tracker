@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h1>Add a new transaction:</h1>
+    </nav>
+    <form action="" onsubmit="return add()">
+        <span class="all">
+            <span class="type">
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+        </span>
+        <span class="both">
+            <span class="name">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+        </span>
+        <span class="amount">
+            <label for="amount">Amount:</label>
+            <input type="number" name="amount" id="amount" required>
+        </span>
+        </span>
+        </span>
+        <button type="submit">Add to transactions</button>
+    </form>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Options</th>
+        </tr>
+        
+    </table>
+  </body>
+  <script src="jquery/jquery-3.7.1.js"></script>
+  <script src="script.js"></script>
+</html>
